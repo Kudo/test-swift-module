@@ -7,4 +7,10 @@
 @interface CustomAppDelegate : RCTAppDelegate
 @end
 
+#else
+
+// Workaround build error from main.m
+@interface CustomAppDelegate : UIResponder
+@end
+
 #endif
