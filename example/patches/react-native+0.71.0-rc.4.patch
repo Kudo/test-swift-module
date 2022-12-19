@@ -1,0 +1,12 @@
+diff --git a/node_modules/react-native/Libraries/AppDelegate/React-RCTAppDelegate.podspec b/node_modules/react-native/Libraries/AppDelegate/React-RCTAppDelegate.podspec
+index fff8711..61e0e5a 100644
+--- a/node_modules/react-native/Libraries/AppDelegate/React-RCTAppDelegate.podspec
++++ b/node_modules/react-native/Libraries/AppDelegate/React-RCTAppDelegate.podspec
+@@ -54,6 +54,7 @@ Pod::Spec.new do |s|
+   # This guard prevent to install the dependencies when we run `pod install` in the old architecture.
+   s.compiler_flags = other_cflags
+   s.pod_target_xcconfig    = {
++    "DEFINES_MODULE" => "YES",
+     "HEADER_SEARCH_PATHS" => header_search_paths,
+     "OTHER_CPLUSPLUSFLAGS" => other_cflags,
+     "CLANG_CXX_LANGUAGE_STANDARD" => "c++17"
